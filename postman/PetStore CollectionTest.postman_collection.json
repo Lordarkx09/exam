@@ -1,0 +1,61 @@
+{
+  "info": {
+    "_postman_id": "b19a565f-1cdc-41b5-aefb-c6d7f58a62f6",
+    "name": "PetStore CollectionTest",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "56222441",
+    "_collection_link": "https://go.postman.co/collection/56222441-b19a565f-1cdc-41b5-aefb-c6d7f58a62f6?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Get Pet",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/api/pet/10000023",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "pet",
+            "10000023"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Add Pet",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"id\": 10000023,\n  \"status\": \"available\",\n  \"name\": \"testingPet23\"\n}"
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/pet",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "pet"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
